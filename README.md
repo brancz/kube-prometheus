@@ -10,6 +10,9 @@ First, you need a running Kubernetes cluster. If you don't have one, follow
 the instructions of [bootkube](https://github.com/kubernetes-incubator/bootkube)
 or [minikube](https://github.com/kubernetes/minikube).
 
+> Note that minikube hides some components like etcd so to see the extend of
+> this setup we recommend setting up a [local cluster using bootkube](https://github.com/kubernetes-incubator/bootkube/tree/master/hack/multi-node).
+
 etcd is an important component of a working Kubernetes cluster, but it's deployed
 outside of it. The monitoring setup below assumes that it is made visible from
 within the cluster through a headless Kubernetes service.
